@@ -1,5 +1,6 @@
 package com.bodler.industry.mobilecodingchallenge.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -21,9 +22,14 @@ public class Repository {
     @Expose
     String description;
 
-    @SerializedName("Owner")
+    @SerializedName("owner")
     @Expose
-    User Owner;
+    User owner;
+
+    @JsonProperty("stargazers_count")
+    @SerializedName("stargazers_count")
+    @Expose
+    String stargazersCount;
 
     public int getId() {
         return id;
@@ -50,10 +56,18 @@ public class Repository {
     }
 
     public User getOwner() {
-        return Owner;
+        return owner;
     }
 
     public void setOwner(User owner) {
-        Owner = owner;
+        this.owner = owner;
+    }
+
+    public String getStargazersCount() {
+        return stargazersCount;
+    }
+
+    public void setStargazersCount(String stargazersCount) {
+        this.stargazersCount = stargazersCount;
     }
 }

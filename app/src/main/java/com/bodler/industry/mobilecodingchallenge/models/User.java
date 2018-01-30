@@ -22,6 +22,14 @@ public class User {
         return id;
     }
 
+    @JsonProperty("avatar_url")
+    @SerializedName("avatar_url")
+
+    @Expose
+    String avatarURL;
+
+
+
     public void setId(int id) {
         this.id = id;
     }
@@ -34,32 +42,12 @@ public class User {
         this.login = login;
     }
 
-    public int getAvatarURL() {
+    public String getAvatarURL() {
         return avatarURL;
     }
 
-    public void setAvatarURL(int avatarURL) {
+    public void setAvatarURL(String avatarURL) {
         this.avatarURL = avatarURL;
     }
-
-    public int getStargazersCount() {
-        return stargazersCount;
-    }
-
-    public void setStargazersCount(int stargazersCount) {
-        this.stargazersCount = stargazersCount;
-    }
-
-    @JsonProperty("avatar_url")
-    @SerializedName("avatar_url")
-
-    @Expose
-    int avatarURL;
-
-    @JsonProperty("stargazers_count")
-    @SerializedName("stargazers_count")
-    @Expose
-    int stargazersCount;
-
 
 }
