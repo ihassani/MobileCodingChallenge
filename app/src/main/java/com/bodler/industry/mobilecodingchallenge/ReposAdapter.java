@@ -55,6 +55,12 @@ public class ReposAdapter extends RecyclerView.Adapter<ReposAdapter.ItemRowHolde
         return reposList.size();
     }
 
+    public void addItems(ArrayList<Repository> list) {
+        if (list != null) {
+            reposList.addAll(list);
+        }
+    }
+
     public class ItemRowHolder extends RecyclerView.ViewHolder {
 
         protected TextView repoNameTextView;

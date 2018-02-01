@@ -36,9 +36,10 @@ public class Utils {
 
         from.add(Calendar.DAY_OF_MONTH, - days);
 
-        int month = (from.get(Calendar.MONTH) + 1);
+        int month = from.get(Calendar.MONTH) + 1;
+        int day = from.get(Calendar.DAY_OF_MONTH);
 
-        String fromDate = from.get(Calendar.YEAR) + "-" +  (month < 10 ? "0" + month : month)  + "-" +from.get(Calendar.DAY_OF_MONTH);
+        String fromDate = from.get(Calendar.YEAR) + "-" +  (month < 10 ? "0" + month : month)  + "-" + (day < 10 ? "0" + day : day);
 
         return fromDate;
     }

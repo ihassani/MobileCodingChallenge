@@ -14,5 +14,5 @@ import retrofit2.http.Query;
 public interface WS {
     @GET("repositories")
     Call<SearchResult<Repository>> getAllRepos(
-            @Query("q") String q, @Query("sort") String sort, @Query("order") String order);
+            @Query("q") String q, @Query("sort") String sort, @Query("order") String order, @Query("page") String page);
 }
