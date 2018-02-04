@@ -1,4 +1,4 @@
-package com.bodler.industry.mobilecodingchallenge;
+package com.bodler.industry.mobilecodingchallenge.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bodler.industry.mobilecodingchallenge.R;
 import com.bodler.industry.mobilecodingchallenge.models.Repository;
 import com.bumptech.glide.Glide;
 

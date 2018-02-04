@@ -1,4 +1,4 @@
-package com.bodler.industry.mobilecodingchallenge;
+package com.bodler.industry.mobilecodingchallenge.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ProgressBar;
 
+import com.bodler.industry.mobilecodingchallenge.R;
+import com.bodler.industry.mobilecodingchallenge.adapters.ReposAdapter;
 import com.bodler.industry.mobilecodingchallenge.models.Repository;
 import com.bodler.industry.mobilecodingchallenge.models.SearchResult;
 import com.bodler.industry.mobilecodingchallenge.utils.Utils;
